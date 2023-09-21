@@ -1,0 +1,89 @@
+@import "../Variables/Spacings.scss";
+@import "../Variables/color.scss";
+
+.resort__container {
+  background-color: #ffff;
+  padding: 100px 25px;
+}
+
+.resort__content {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.resort__heading {
+  font-size: $headingFont;
+  font-family: $fontPoppins;
+  margin-bottom: 140px;
+  position: relative;
+  img {
+    position: absolute;
+    height: 180px;
+
+    top: 25px;
+    object-fit: cover;
+  }
+}
+
+.resort-image-card__container {
+  position: relative;
+  margin: 12px;
+  background-color: $blackColor;
+  img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    object-fit: contain;
+  }
+
+  .resort-image-card__text__section {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: $whiteNavbar;
+    font-family: $fontPoppins;
+    font-size: $normalText;
+  }
+}
+
+.resort-image-card__container:hover {
+  img {
+    opacity: 0.3;
+  }
+  .resort-image-card__text__section {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .resort__heading {
+    font-size: $headingSmallScreen;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .resort__heading {
+    margin-bottom: 80px;
+    img {
+      height: 110px;
+      top: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  .resort__heading {
+    font-size: $headingFont2;
+    img {
+      display: none;
+    }
+  }
+}

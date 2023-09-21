@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.resort__container {
+  background-color: white;
+  padding: 100px 25px;
+}
+
+.resort__content {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.resort__heading {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 140px;
+  position: relative;
+}
+.resort__heading img {
+  position: absolute;
+  height: 180px;
+  top: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.resort-image-card__container {
+  position: relative;
+  margin: 12px;
+  background-color: #000;
+}
+.resort-image-card__container img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.resort-image-card__container .resort-image-card__text__section {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f0ffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.resort-image-card__container:hover img {
+  opacity: 0.3;
+}
+.resort-image-card__container:hover .resort-image-card__text__section {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .resort__heading {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .resort__heading {
+    margin-bottom: 80px;
+  }
+  .resort__heading img {
+    height: 110px;
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 323px) {
+  .resort__heading {
+    font-size: 22px;
+  }
+  .resort__heading img {
+    display: none;
+  }
+}/*# sourceMappingURL=resorts.css.map */

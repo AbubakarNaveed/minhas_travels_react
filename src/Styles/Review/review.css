@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.review__container {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.review__card {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.review__wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  overflow-x: hidden !important;
+}
+
+.review__heading {
+  font-size: 35px;
+  color: #000;
+}
+
+@media only screen and (max-width: 700px) {
+  .resort__heading {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .resort__heading {
+    margin-bottom: 80px;
+  }
+  .resort__heading img {
+    height: 110px;
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .resort__heading {
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=review.css.map */

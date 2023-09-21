@@ -1,0 +1,49 @@
+@import "../Variables/Spacings.scss";
+@import "../Variables/color.scss";
+
+.review__container {
+  height: 100vh;
+  font-family: $fontPoppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+}
+
+.review__card {
+  font-family: $fontPoppins !important;
+}
+
+.review__wrapper {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  overflow-x: hidden !important;
+}
+
+.review__heading {
+  font-size: $headingFont;
+  color: $blackColor;
+}
+
+@media only screen and (max-width: 700px) {
+  .resort__heading {
+    font-size: $headingSmallScreen;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .resort__heading {
+    margin-bottom: 80px;
+    img {
+      height: 110px;
+      top: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .resort__heading {
+    margin-bottom: 50px;
+    font-size: $headingFont2;
+  }
+}
